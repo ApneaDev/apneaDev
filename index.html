@@ -48,13 +48,9 @@
             align-self: end;
         }
 
-        h1, h2, h3, h4 {
-            margin: 1em 0 0 0;
-        }
-
         h1 {
             font-size: 2em;
-            margin: 0.5em 0;
+            margin: 0.5em 0 0 0;
             color: #b48ead;
             font-weight: bold;
         }
@@ -72,19 +68,30 @@
             color: #d8dee9;
         }
 
-        h1 + p {
+        header {
             margin-bottom: 1em;
-            margin-top: -1em;
+        }
+        section{
+            margin-bottom: 1em;
         }
     </style>
 </head>
 <body>
 <main>
-    <h1>Sarah Thiel</h1>
-    <p>Developer</p>
-    <p>Mail: <a href="mailto:s@rah-thiel.de">s@rah-thiel.de</a></p>
-    <p>GPG: <a href="https://apnea.dev/key.asc" target="_blank">C871 8341 DCEF 7390</a></p>
-    <p>Github: <a href="https://github.com/apnea-dev" target="_blank">Apnea Dev</a></p>
+    <header>
+        <h1>Sarah Thiel</h1>
+        <p>System administrator / Web Developer</p>
+    </header>
+    <section class="contact">
+        <p>Mail: <a href="mailto:s@rah-thiel.de">s@rah-thiel.de</a></p>
+        <p>GPG: <a href="https://apnea.dev/key.asc" target="_blank">C871 8341 DCEF 7390</a></p>
+    </section>
+    <section class="social">
+        <p>Github: <a href="https://github.com/apnea-dev" target="_blank">Apnea Dev</a></p>
+        <p>Xing: <a href="https://www.xing.com/profile/Sarah_Thiel26/" target="_blank">Sarah Thiel</a></p>
+        <p>Twitter: <a href="https://twitter.com/ApneaDev" target="_blank">ApneaDev</a></p>
+        <p>Mastodon: <a href="https://chaos.social/@apnea" target="_blank">@apnea@chaos.social</a></p>
+    </section>
 </main>
 <footer>
     <p>(c)1987 - 2020 Sarah Thiel</p>
